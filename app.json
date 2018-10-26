@@ -1,0 +1,8 @@
+{
+  "name": "heroku AI imc",
+  "description": "Classtify Image ",
+  "image": "heroku/python",
+  "repository": "https://github.com/mashukmashum/imc.git",
+  "keywords": ["python", "flask", "tensorflow" ],
+  "addons": [ ]
+}
