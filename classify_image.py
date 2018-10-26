@@ -6,7 +6,7 @@ image_data = tf.gfile.FastGFile(image_path, 'rb').read()
 label_lines = [line.rstrip() for line
     in tf.gfile.GFile("classify_image/incepion_model/labels.txt")]
 # Unpersists graph from file
-with tf.gfile.FastGFile("classify_image/incepion_model/retrained_graph.pb", 'rb') as f:
+with tf.gfile.FastGFile("classify_image/incepion_model/graph.pb", 'rb') as f:
     graph_def = tf.GraphDef()
     graph_def.ParseFromString(f.read())
     _ = tf.import_graph_def(graph_def, name='')
