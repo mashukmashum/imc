@@ -1,4 +1,4 @@
-import tensorflow as tf, sys
+import tensorflow as tf, sys,os
 image_path = sys.argv[1]
 dir_path = os.path.dirname(os.path.realpath(__file__))
 # Read in the image_data
