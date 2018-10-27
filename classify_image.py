@@ -1,6 +1,6 @@
 import tensorflow as tf, sys,os
 image_path = sys.argv[1]
-dir_path = os.path.abspath(os.path.dirname(__file__))
+dir_path = dir_path = os.path.dirname(os.path.realpath(__file__))
 # Read in the image_data
 image_data = tf.gfile.FastGFile(image_path, 'rb').read()
 # Loads label file, strips off carriage return
